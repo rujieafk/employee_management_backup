@@ -1,0 +1,129 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/*Exit Clearance stylesheet*/
+.paragraph, .exit-title{
+  margin: 20px;
+  text-align: left;
+}
+.exit-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  text-align: left;
+  padding: 20px;
+}
+
+.exit-content-holder{
+  display: flex;
+  flex-direction: row;
+}
+
+.exit-inputbox{
+  border-radius: 5px;
+  border: 1px solid gray;
+  width: 50%;
+  padding: 5px;
+}
+
+@media only screen and (min-width: 280px){
+  .exit-container{
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .exit-inputbox{
+    overflow-x: hidden;
+  }
+}
+@media only screen and (min-width: 760px){
+  .exit-container{
+    display: grid;
+    grid-template-columns: auto auto;
+  } 
+  .exit-inputbox{
+    overflow-x: hidden;
+  }
+}
+
+.exit-item {
+  text-align: left;   
+  margin-left: 10px;
+  width: 50%;
+}
+
+
+/*A. Project Manager/PIC/Department Manager*/
+.exit-container-A{
+  text-align: left;
+  padding: 20px;
+}
+
+.exit-content-holder-A{
+  display:flex;
+  flex-direction: row;
+}
+.exit-inputbox-A {
+  border-radius: 5px;
+  border: 1px solid;
+  padding: 5px;
+  width: 50%;
+}
+
+/*B. Administration Clearance: The following items were returned by the employee:*/
+.exit-container-B, .exit-container-C{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 20px;
+}
+.exit-inputbox-B, .exit-inputbox-C{
+  margin: 5px;
+}
+.exit-item-B, .exit-inputbox-C {
+  text-align: left;   
+  margin-left: 10px;
+  width: 100%;
+}
+
+/*D*/
+.exit-item-D{
+  border-top: 1px solid ;
+  width: 35%;
+  margin: auto;
+  padding-bottom: 25px;
+}
